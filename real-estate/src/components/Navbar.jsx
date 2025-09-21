@@ -23,9 +23,9 @@ const Navbar = () => {
 
         <ul className='hidden md:flex gap-7 text-white'>
             <a className='cursor-pointer hover:text-gray-400' href="#Header">Home</a>
-            <a className='cursor-pointer hover:text-gray-400' href="#">About</a>
-            <a className='cursor-pointer hover:text-gray-400' href="#">Projects</a>
-            <a className='cursor-pointer hover:text-gray-400' href="#">Testimonials</a>
+            <a className='cursor-pointer hover:text-gray-400' href="#About">About</a>
+            <a className='cursor-pointer hover:text-gray-400' href="#Projects">Projects</a>
+            <a className='cursor-pointer hover:text-gray-400' href="#Testimonials">Testimonials</a>
         </ul>
         <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign up</button>
         <img onClick={() => setshowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' alt="" />
@@ -36,10 +36,10 @@ const Navbar = () => {
           <img onClick={() => setshowMobileMenu(false)}  src={assets.cross_icon} className='w-6' alt="" />
         </div>
         <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium '>
-          <a href="#Header" className='px-4 py-2 rounded-full inline-block'>Home</a>
-          <a href="#About" className='px-4 py-2 rounded-full inline-block'>About</a>
-          <a href="#Projects" className='px-4 py-2 rounded-full inline-block'>Projects</a>
-          <a href="#Testimonails" className='px-4 py-2 rounded-full inline-block'>Testimonails</a>
+          <a onClick={() => setshowMobileMenu(false)} href="#Header" className='px-4 py-2 rounded-full inline-block'>Home</a>
+          <a onClick={() => setshowMobileMenu(false)} href="#About" className='px-4 py-2 rounded-full inline-block'>About</a>
+          <a onClick={() => setshowMobileMenu(false)} href="#Projects" className='px-4 py-2 rounded-full inline-block'>Projects</a>
+          <a onClick={() => setshowMobileMenu(false)} href="#Testimonails" className='px-4 py-2 rounded-full inline-block'>Testimonails</a>
         </ul>
        </div>
     </div>
